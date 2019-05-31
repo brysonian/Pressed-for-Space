@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import styled, { createGlobalStyle, injectGlobal } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import {
   space,
   display,
@@ -36,6 +36,10 @@ export const Style = createGlobalStyle`
 html, body { 
   margin: 0;
   height: 100%;
+
+  /* TYPOGRAPHY */
+  @import url('https://use.typekit.net/vhp0zxk.css');
+  font-family: 'neue-haas-grotesk-display', sans-serif;
 }
 
 body {
