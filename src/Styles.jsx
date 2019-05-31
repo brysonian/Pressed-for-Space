@@ -1,19 +1,21 @@
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import styled, { createGlobalStyle } from "styled-components";
 import {
   space,
   display,
   height,
+  width,
   flexDirection,
   justifyContent,
-  gridTemplateColumns,
   gridColumn,
+  fontFamily,
   fontSize,
   fontWeight,
   lineHeight,
-  textAlign,
-  gridGap
+  alignItems
 } from "styled-system";
+
+import superRetro from "./fonts/superRetro.ttf";
 
 // TYPOGRAPHY
 // injectGlobal`
@@ -31,15 +33,22 @@ export const Style = createGlobalStyle`
 * {
     box-sizing: border-box;
     margin: 0;
+
+    /* TYPOGRAPHY */
+  ${
+    "" /* @import url('https://use.typekit.net/vhp0zxk.css');
+  font-family: 'neue-haas-grotesk-display', sans-serif; */
+  }
+
+  @font-face {
+    font-family: 'superRetro';
+    src: url(${superRetro}) format('truetype');
+  }
 }
 
 html, body { 
   margin: 0;
   height: 100%;
-
-  /* TYPOGRAPHY */
-  @import url('https://use.typekit.net/vhp0zxk.css');
-  font-family: 'neue-haas-grotesk-display', sans-serif;
 }
 
 body {
@@ -59,22 +68,19 @@ ${
 
 #root {
   height: 100%;
-  font-family: Arial, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 `;
 
 export const Container = styled.div`
   ${height}
   ${space}
+  ${fontFamily}
+  ${fontSize}
   
   ${display}
   ${flexDirection}
   ${justifyContent}
-  ${gridTemplateColumns}
-  ${gridColumn}
-  ${gridGap}
-  ${textAlign}
+  ${alignItems}
 `;
 
 export const Text = styled.div`
@@ -84,20 +90,22 @@ export const Text = styled.div`
   ${lineHeight}
   ${space}
   ${gridColumn}
-  ${textAlign}
+  ${alignItems}
+  ${display}
+  ${width}
 `;
 
-export const StyledNavLink = styled(NavLink)`
-  text-decoration: none;
-  color: black;
-  &:hover {
-    color: #fe5000;
-  }
-  ${fontWeight}
-  ${fontSize}
-  ${gridColumn}
-  ${textAlign}
-`;
+// export const StyledNavLink = styled(NavLink)`
+//   text-decoration: none;
+//   color: black;
+//   &:hover {
+//     color: #fe5000;
+//   }
+//   ${fontWeight}
+//   ${fontSize}
+//   ${gridColumn}
+//   ${alignItems}
+// `;
 
 // Inline styles
 export const meta = `rel="noopener noreferrer" target='_blank'`;
