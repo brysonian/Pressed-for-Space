@@ -1,8 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { Style } from "./Styles";
+import Home from "./pages/Home";
 
-export class App extends Component {
+class App extends Component {
   render() {
     return (
       <React.Fragment>

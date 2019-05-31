@@ -25,14 +25,14 @@
       "not dead",
       "not op_mini all"
     ],
-    "installConfig": {
-      "pnp": true
-    },
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "installConfig": {
+    "pnp": true
   },
   "devDependencies": {
     "eslint": "^5.16.0",

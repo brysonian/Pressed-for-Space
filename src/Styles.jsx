@@ -16,18 +16,16 @@ import {
 } from "styled-system";
 
 // TYPOGRAPHY
-injectGlobal`
-    @import url(https://use.typekit.net/vhp0zxk.css);
+// injectGlobal`
+//     @import url(https://use.typekit.net/vhp0zxk.css);
 
-    @font-face {
-        font-family: 'Luminari';
-        font-style: normal;
-        font-weight: normal;
-        src: local('Luminari'), url('Luminari-Regular.woff') format('woff');
-    }
-
-    
-`;
+//     @font-face {
+//         font-family: 'Luminari';
+//         font-style: normal;
+//         font-weight: normal;
+//         src: local('Luminari'), url('Luminari-Regular.woff') format('woff');
+//     }
+// `;
 
 export const Style = createGlobalStyle`
 * {
@@ -38,6 +36,10 @@ export const Style = createGlobalStyle`
 html, body { 
   margin: 0;
   height: 100%;
+}
+
+body {
+    background-color: #EAE536;
 }
 
 ${
