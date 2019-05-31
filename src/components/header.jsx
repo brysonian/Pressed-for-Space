@@ -7,14 +7,13 @@ export class Header extends Component {
     return (
       <Container
         fontFamily="superRetro"
-        textAlign="center"
         height="100%"
         display="flex"
         flexDirection="column"
         alignItems="center"
       >
-        <Text fontSize={150}>PRESSED FOR</Text>
-        <Text fontSize={330}>SPACE</Text>
+        <Text fontSize={170}>PRESSED FOR</Text>
+        <Text fontSize={320} letterSpacing={35}>SPACE</Text>
       </Container>
     );
   }

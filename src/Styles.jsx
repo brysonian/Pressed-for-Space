@@ -7,12 +7,12 @@ import {
   width,
   flexDirection,
   justifyContent,
-  gridColumn,
   fontFamily,
   fontSize,
   fontWeight,
   lineHeight,
-  alignItems
+  alignItems,
+  letterSpacing
 } from "styled-system";
 
 import superRetro from "./fonts/superRetro.ttf";
@@ -81,6 +81,7 @@ export const Container = styled.div`
   ${flexDirection}
   ${justifyContent}
   ${alignItems}
+  ${letterSpacing}
 `;
 
 export const Text = styled.div`
@@ -89,10 +90,10 @@ export const Text = styled.div`
   ${fontWeight}
   ${lineHeight}
   ${space}
-  ${gridColumn}
   ${alignItems}
   ${display}
   ${width}
+  ${letterSpacing}
 `;
 
 // export const StyledNavLink = styled(NavLink)`
