@@ -7,7 +7,7 @@ import superRetro from "../../assets/fonts/superRetro.ttf";
 export class Header extends Component {
   render() {
     return (
-      <Container height="100%" display="flex" flexDirection="column" alignItems="center">
+      <Container display="flex" flexDirection="column" alignItems="center">
         <Pressed>PRESSED FOR</Pressed>
         <Container>
           <Space>SPACE</Space>
