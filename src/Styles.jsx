@@ -77,32 +77,6 @@ export const Text = styled.div`
   ${width}
   ${letterSpacing}
   ${color}
-
-  @supports 
-  ((-webkit-text-stroke-color: black)
-  and
-  (-webkit-text-fill-color: white))
-  or
-  ((-moz-text-stroke-color: black)
-  and
-  (-moz-text-fill-color: white)) {
-  span {
-       -moz-text-fill-color: white;
-    -webkit-text-fill-color: white;
-       -moz-text-stroke-color: black;
-    -webkit-text-stroke-color: black;
-       -moz-text-stroke-width: 4px;  
-    -webkit-text-stroke-width: 4px;
-  }
-  span.yellow {
-       -moz-text-fill-color: #EAE536;
-    -webkit-text-fill-color: #EAE536;
-       -moz-text-stroke-color: black;
-    -webkit-text-stroke-color: black;
-       -moz-text-stroke-width: 4px;  
-    -webkit-text-stroke-width: 4px;
-  }
-}
 `;
 
 // export const StyledNavLink = styled(NavLink)`

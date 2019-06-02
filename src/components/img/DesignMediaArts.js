@@ -4,7 +4,7 @@ const SvgDesignMediaArts = props => (
   <svg
     id="DesignMediaArts_svg__Layer_1"
     data-name="Layer 1"
-    viewBox="0 0 792 612"
+    viewBox="0 0 1584 1224"
     {...props}
   >
     <defs>
