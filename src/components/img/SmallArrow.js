@@ -3,24 +3,23 @@ import React from "react";
 const SvgSmallArrow = props => (
   <svg
     id="SmallArrow_svg__Layer_1"
-    data-name="Layer 1"
-    viewBox="0 0 792 612"
+    width={48.3}
+    height={138.8}
+    xmlSpace="preserve"
     {...props}
   >
-    <defs>
-      <style>{".SmallArrow_svg__cls-1{fill:none}"}</style>
-    </defs>
+    <style>{".SmallArrow_svg__st0{fill:none}"}</style>
     <path
-      className="SmallArrow_svg__cls-1"
-      d="M70.39 85.05h731.37v425.18H70.39z"
+      className="SmallArrow_svg__st0"
+      d="M-301.5-139.3h731.4v425.2h-731.4z"
     />
     <path
-      className="SmallArrow_svg__cls-1"
-      d="M70.39 85.05h731.37v425.18H70.39z"
+      className="SmallArrow_svg__st0"
+      d="M-301.5-139.3h731.4v425.2h-731.4z"
     />
     <path
       fill="#231f20"
-      d="M420.2 249.89l-25.09-25.52-23.17 28.94 7.18 5.75 11.74-14.67v118.74h9.2V242.52l13.58 13.82 6.56-6.45z"
+      d="M48.3 25.5L23.2 0 0 28.9l7.2 5.8L18.9 20v118.8h9.2V18.2L41.7 32z"
     />
   </svg>
 );

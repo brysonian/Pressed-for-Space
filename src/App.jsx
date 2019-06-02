@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { Style } from "./Styles";
@@ -15,8 +15,8 @@ class App extends Component {
           </Switch>
         </Router>
       </React.Fragment>
-    )
+    );
   }
 }
 
-export default App
+export default App;

@@ -4,7 +4,8 @@ const SvgSpace = props => (
   <svg
     id="Space_svg__Layer_1"
     data-name="Layer 1"
-    viewBox="0 0 792 612"
+    width={792}
+    height={612}
     {...props}
   >
     <defs>

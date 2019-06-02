@@ -28,6 +28,8 @@ const Pressed = styled.div`
   font-family: "superRetro";
   font-size: 10.5rem;
 
+  position: absolute;
+
   @supports (
       (-webkit-text-stroke-color: black) and (-webkit-text-fill-color: white)
     )
@@ -51,6 +53,8 @@ const Space = styled.div`
 
   font-family: "superRetro";
   font-size: 22rem;
+
+  padding-top: 8rem;
 
   @supports (
       (-webkit-text-stroke-color: black) and (-webkit-text-fill-color: #eae536)

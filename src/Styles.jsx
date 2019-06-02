@@ -13,7 +13,8 @@ import {
   lineHeight,
   alignItems,
   letterSpacing,
-  color
+  color,
+  position
 } from "styled-system";
 
 import superRetro from "./assets/fonts/superRetro.ttf";
@@ -34,8 +35,10 @@ export const Style = createGlobalStyle`
 * {
     box-sizing: border-box;
     margin: 0;
-  ${'' /* @import url('https://use.typekit.net/vhp0zxk.css');
-  font-family: 'neue-haas-grotesk-display', sans-serif; */}
+  ${
+    "" /* @import url('https://use.typekit.net/vhp0zxk.css');
+  font-family: 'neue-haas-grotesk-display', sans-serif; */
+  }
   
   @font-face {
     font-family: 'superRetro';
@@ -58,7 +61,7 @@ export const Container = styled.div`
   ${space}
   ${fontFamily}
   ${fontSize}
-  
+  ${position}
   ${display}
   ${flexDirection}
   ${justifyContent}
