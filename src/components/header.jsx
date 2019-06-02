@@ -12,8 +12,12 @@ export class Header extends Component {
         flexDirection="column"
         alignItems="center"
       >
-        <Text fontSize={170}>PRESSED FOR</Text>
-        <Text fontSize={320} letterSpacing={35}>SPACE</Text>
+        <Text fontSize={170}>
+          <span>PRESSED FOR</span>
+        </Text>
+        <Text fontSize={320} letterSpacing={35}>
+          <span className="yellow">SPACE</span>
+        </Text>
       </Container>
     );
   }

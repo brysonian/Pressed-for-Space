@@ -7,6 +7,7 @@
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
+    "rebass": "^3.1.1",
     "styled-components": "^4.2.0",
     "styled-system": "^4.1.0"
   },
@@ -14,7 +15,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "svgr": "svgr -d src/components/img/ src/assets/svg/"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,6 +37,7 @@
     "pnp": true
   },
   "devDependencies": {
+    "@svgr/cli": "^4.3.0",
     "eslint": "^5.16.0",
     "eslint-plugin-react": "^7.13.0"
   }
