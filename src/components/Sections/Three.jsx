@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import styled from "styled-components";
-import { Button } from "rebass";
+import styled, { keyframes } from "styled-components";
 
 import { Container } from "../../Styles";
 import Burst from "../img/Burst";
@@ -18,13 +17,9 @@ export class Three extends Component {
       >
         <Container>
           <Burst />
-          <StyledButton>
-            <p>Mon - Fri</p>
-            <p>10 AM - 5 PM</p>
-          </StyledButton>
         </Container>
         <Container>
-          <Circle />
+          <Logo />
         </Container>
         <Container>
           <Arrow />
@@ -37,14 +32,25 @@ export class Three extends Component {
   }
 }
 
-const StyledButton = styled(Button)`
-  color: black;
-  background-color: transparent;
-  border: 0px solid black;
-  font-size: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+const Logo = styled(Circle)`
+  animation: ${rotate} infinite 20s linear;
+  height: 25rem;
+  width: 25rem;
+  display: block;
+  margin: auto;
+
+  &:hover {
+    animation-play-state: paused;
+  }
 `;
 
 export default Three;

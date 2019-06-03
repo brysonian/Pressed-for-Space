@@ -1,25 +1,44 @@
 import React from "react";
 
 const SvgBurst = props => (
-  <svg width={566.9} height={573.8} {...props}>
+  <svg
+    id="Burst_svg__Layer_1"
+    width={556.9}
+    height={543.7}
+    xmlSpace="preserve"
+    {...props}
+  >
+    <style>
+      {
+        ".Burst_svg__st1{fill:#231f20}.Burst_svg__st2{font-family:'HelveticaNeue-BoldItalic'}.Burst_svg__st3{font-size:42.3988px}.Burst_svg__st4{letter-spacing:2}"
+      }
+    </style>
     <path
-      fill="#fff"
-      d="M384.7 10l-97.3 120.8-92.6-120.3-.3 155-147.7-29.3 96.8 116.7L10 328.3l148.8 23.8-57.1 144.8 131-80.2 46.2 146.5 52-146.8L458.7 496l-51.4-144.5L557 326.9l-130.7-74.7L527.8 135 379 165z"
+      fill="#eae536"
+      stroke="#000"
+      strokeWidth={2}
+      strokeMiterlimit={10}
+      d="M278.1 125.1L372.8 3.3l-5.6 154.2 150.4-32.4-103.3 114.3 136.2 71.9L398 332.5l58 142.6-130.6-81.9-47.3 146.7L231 393.2l-130.6 81.9 58.1-142.6L5.9 311.3l136.3-71.9L38.8 125.1l150.5 32.4-5.7-154.2z"
     />
-    <defs>
-      <path id="Burst_svg__a" d="M0 0h566.9v573.8H0z" />
-    </defs>
-    <clipPath id="Burst_svg__b">
-      <use xlinkHref="#Burst_svg__a" overflow="visible" />
-    </clipPath>
-    <g clipPath="url(#Burst_svg__b)">
-      <path
-        fill="none"
-        stroke="#231f20"
-        strokeWidth={6.73}
-        d="M384.7 10l-97.3 120.8-92.6-120.3-.3 155-147.7-29.3 96.8 116.7L10 328.3l148.8 23.8-57.1 144.8 131-80.2 46.2 146.5 52-146.8L458.7 496l-51.4-144.5L557 326.9l-130.7-74.7L527.8 135 379 165z"
-      />
-    </g>
+    <text
+      transform="translate(178.054 265.77)"
+      className="Burst_svg__st1 Burst_svg__st2 Burst_svg__st3 Burst_svg__st4"
+    >
+      {"MON-FRI"}
+    </text>
+    <text
+      transform="translate(159.569 316.216)"
+      className="Burst_svg__st1 Burst_svg__st2 Burst_svg__st3 Burst_svg__st4"
+    >
+      {"10AM-5PM"}
+    </text>
+    <text
+      transform="translate(167.248 212.54)"
+      className="Burst_svg__st1 Burst_svg__st2"
+      fontSize={22.833}
+    >
+      {"EXHIBITION HOURS:"}
+    </text>
   </svg>
 );
 
